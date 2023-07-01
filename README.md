@@ -1,4 +1,4 @@
-# uem
+# UEM
 After i bought my first 8000Hz mouse i realised how bad it works with unreal engine games, because almost all of them have Mouse Smoothing and Mouse Acceleration enabled by default, and only some of them gives you the option to disable it ingame.
 So i made this tool to make it easier to disable it.
 
