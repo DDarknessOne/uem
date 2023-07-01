@@ -1,0 +1,56 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <UseWindowsForms>False</UseWindowsForms>
+    <ApplicationIcon>mouseico.ico</ApplicationIcon>
+    <PackageId>UEM</PackageId>
+    <Authors>DDarkness</Authors>
+    <Company>DDarkness Inc.</Company>
+    <Product>UEM</Product>
+    <Copyright>DDarkness © 2023</Copyright>
+    <PackageIcon>mouse.png</PackageIcon>
+    <AssemblyName>UEM</AssemblyName>
+    <RootNamespace>UEM5</RootNamespace>
+	<IncludeAllContentForSelfExtract>true</IncludeAllContentForSelfExtract>
+	<ApplicationManifest></ApplicationManifest>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <AdditionalFiles Remove="app.manifest" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\folderico.png" />
+    <None Remove="Assets\kofi.png" />
+    <None Remove="Assets\mouse.png" />
+    <None Remove="Assets\mouseico.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\folderico.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\kofi.png" />
+    <Resource Include="Assets\mouse.png" />
+    <Resource Include="Assets\mouseico.ico">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Content Include="mouseico.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="C:\Users\DDarkness\Desktop\buttons\mouse.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="WPF-UI" Version="2.0.3" />
+  </ItemGroup>
+
+</Project>
